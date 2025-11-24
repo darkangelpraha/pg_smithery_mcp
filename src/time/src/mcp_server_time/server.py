@@ -58,7 +58,7 @@ def get_zoneinfo(timezone_name: str) -> ZoneInfo:
         return ZoneInfo(timezone_name)
     except Exception as e:
         raise McpError(
-            ErrorData(code=INVALID_PARAMS, message=f"Invalid timezone: {str(e)}")
+            ErrorData(code=INVALID_PARAMS, message=f"Invalid timezone: '{str(e)}'")
         )
 
 
