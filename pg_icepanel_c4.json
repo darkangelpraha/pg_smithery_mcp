@@ -4,6 +4,7 @@
   "description": "C4 Model architecture diagram for Premium Gastro tech stack",
   "version": "1.0.0",
   "model": {
+    "enterprise": null,
     "people": [
       {
         "id": "person-petr",
