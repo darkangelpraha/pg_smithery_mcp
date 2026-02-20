@@ -1,0 +1,876 @@
+{
+  "id": 1,
+  "name": "Premium Gastro Architecture",
+  "description": "C4 Model architecture diagram for Premium Gastro tech stack",
+  "version": "1.0.0",
+  "model": {
+    "people": [
+      {
+        "id": "person-petr",
+        "name": "Petr",
+        "description": "CEO of Premium Gastro",
+        "location": "Internal",
+        "tags": "Person,Internal"
+      },
+      {
+        "id": "person-klient-horeca",
+        "name": "Klient HORECA",
+        "description": "HORECA customer placing orders",
+        "location": "External",
+        "tags": "Person,External"
+      },
+      {
+        "id": "person-dodavatel",
+        "name": "Dodavatel",
+        "description": "Supplier providing products",
+        "location": "External",
+        "tags": "Person,External"
+      }
+    ],
+    "softwareSystems": [
+      {
+        "id": "system-premium-gastro",
+        "name": "Premium Gastro",
+        "description": "B2B gastronomy e-commerce platform",
+        "location": "Internal",
+        "tags": "Software System,Internal",
+        "containers": [
+          {
+            "id": "container-missive",
+            "name": "Missive",
+            "description": "Communication hub - command center for all communication",
+            "technology": "Email/Communication Platform",
+            "tags": "Container,Communication",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-n8n",
+            "name": "n8n",
+            "description": "Automation engine - workflow orchestration and API glue",
+            "technology": "Workflow Automation",
+            "tags": "Container,Automation",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-supabase",
+            "name": "Supabase",
+            "description": "Backend database and API",
+            "technology": "PostgreSQL Database",
+            "tags": "Container,Database",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-qdrant",
+            "name": "Qdrant",
+            "description": "Vector database for AI embeddings",
+            "technology": "Vector Database",
+            "tags": "Container,Database,AI",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-bluejet",
+            "name": "BlueJet CRM",
+            "description": "Customer/supplier management and quotes",
+            "technology": "CRM System",
+            "tags": "Container,CRM",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-shoptet",
+            "name": "Shoptet Premium",
+            "description": "E-commerce platform - order system of record",
+            "technology": "E-commerce Platform",
+            "tags": "Container,E-commerce",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-linear",
+            "name": "Linear",
+            "description": "Project management - task management and issue tracking",
+            "technology": "Project Management",
+            "tags": "Container,Project Management",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-synology-nas",
+            "name": "Synology NAS",
+            "description": "Network attached storage for backups and files",
+            "technology": "NAS Storage",
+            "tags": "Container,Storage",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-notion",
+            "name": "Notion",
+            "description": "Knowledge base - documentation and databases",
+            "technology": "Knowledge Management",
+            "tags": "Container,Documentation",
+            "components": [],
+            "relationships": []
+          },
+          {
+            "id": "container-ultraengine",
+            "name": "UltraEngine",
+            "description": "AI agent orchestration platform",
+            "technology": "AI Platform",
+            "tags": "Container,AI",
+            "components": [
+              {
+                "id": "component-lucy",
+                "name": "Lucy",
+                "description": "Human-in-the-loop AI assistant - message categorization, confidence scoring, transaction categorization",
+                "technology": "Claude AI",
+                "tags": "Component,AI,Assistant",
+                "relationships": []
+              },
+              {
+                "id": "component-pan-talir",
+                "name": "Pan Talíř",
+                "description": "AI Digital Twin - stock checking, supplier selection, delivery prediction",
+                "technology": "AI Agent",
+                "tags": "Component,AI,Digital Twin",
+                "relationships": []
+              },
+              {
+                "id": "component-zeus",
+                "name": "Zeus",
+                "description": "AI agent for architecture and system management",
+                "technology": "AI Agent",
+                "tags": "Component,AI",
+                "relationships": []
+              },
+              {
+                "id": "component-oompa-loompas",
+                "name": "Oompa Loompas",
+                "description": "Worker AI agents for automated tasks",
+                "technology": "AI Agent",
+                "tags": "Component,AI,Worker",
+                "relationships": []
+              }
+            ],
+            "relationships": []
+          }
+        ],
+        "relationships": []
+      },
+      {
+        "id": "system-pohoda",
+        "name": "Pohoda SQL",
+        "description": "ERP/Accounting system - official financial records and invoicing",
+        "location": "External",
+        "tags": "Software System,External,ERP",
+        "containers": [],
+        "relationships": []
+      },
+      {
+        "id": "system-ecomail",
+        "name": "Ecomail",
+        "description": "Email marketing platform",
+        "location": "External",
+        "tags": "Software System,External,Marketing",
+        "containers": [],
+        "relationships": []
+      },
+      {
+        "id": "system-meta-ads",
+        "name": "Meta Ads",
+        "description": "Facebook/Instagram advertising platform",
+        "location": "External",
+        "tags": "Software System,External,Marketing",
+        "containers": [],
+        "relationships": []
+      },
+      {
+        "id": "system-google-ads",
+        "name": "Google Ads",
+        "description": "Google advertising platform",
+        "location": "External",
+        "tags": "Software System,External,Marketing",
+        "containers": []
+      },
+      {
+        "id": "system-depoto",
+        "name": "Depoto",
+        "description": "Warehouse management and fulfillment",
+        "location": "External",
+        "tags": "Software System,External,Warehouse",
+        "containers": []
+      },
+      {
+        "id": "system-beeper",
+        "name": "Beeper",
+        "description": "Unified messaging platform",
+        "location": "External",
+        "tags": "Software System,External,Communication",
+        "containers": []
+      },
+      {
+        "id": "system-slack",
+        "name": "Slack",
+        "description": "Team communication platform",
+        "location": "External",
+        "tags": "Software System,External,Communication",
+        "containers": []
+      }
+    ],
+    "relationships": [
+      {
+        "id": "rel-petr-premium-gastro",
+        "sourceId": "person-petr",
+        "destinationId": "system-premium-gastro",
+        "description": "Manages and operates",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-klient-premium-gastro",
+        "sourceId": "person-klient-horeca",
+        "destinationId": "system-premium-gastro",
+        "description": "Places orders and communicates",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-dodavatel-premium-gastro",
+        "sourceId": "person-dodavatel",
+        "destinationId": "system-premium-gastro",
+        "description": "Supplies products",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-missive-n8n",
+        "sourceId": "container-missive",
+        "destinationId": "container-n8n",
+        "description": "Sends messages for automation",
+        "technology": "API,Webhook",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-missive",
+        "sourceId": "container-n8n",
+        "destinationId": "container-missive",
+        "description": "Monitors inbox and sends responses",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-lucy",
+        "sourceId": "container-n8n",
+        "destinationId": "component-lucy",
+        "description": "Calls for message analysis",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-lucy-linear",
+        "sourceId": "component-lucy",
+        "destinationId": "container-linear",
+        "description": "Creates tasks from messages",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-lucy-shoptet",
+        "sourceId": "component-lucy",
+        "destinationId": "container-shoptet",
+        "description": "Updates customer profiles",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-pan-talir-shoptet",
+        "sourceId": "component-pan-talir",
+        "destinationId": "container-shoptet",
+        "description": "Checks product availability",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-pan-talir-bluejet",
+        "sourceId": "component-pan-talir",
+        "destinationId": "container-bluejet",
+        "description": "Generates quotes",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-bluejet-shoptet",
+        "sourceId": "container-bluejet",
+        "destinationId": "container-shoptet",
+        "description": "Syncs customer and order data",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-shoptet-pohoda",
+        "sourceId": "container-shoptet",
+        "destinationId": "system-pohoda",
+        "description": "Creates invoices",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-bluejet-pohoda",
+        "sourceId": "container-bluejet",
+        "destinationId": "system-pohoda",
+        "description": "Syncs financial data",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-pohoda",
+        "sourceId": "container-n8n",
+        "destinationId": "system-pohoda",
+        "description": "Syncs transactions",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-lucy-pohoda",
+        "sourceId": "component-lucy",
+        "destinationId": "system-pohoda",
+        "description": "Categorizes transactions",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-ecomail",
+        "sourceId": "container-n8n",
+        "destinationId": "system-ecomail",
+        "description": "Syncs campaign metrics",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-shoptet-ecomail",
+        "sourceId": "container-shoptet",
+        "destinationId": "system-ecomail",
+        "description": "Tracks order attribution via UTM",
+        "technology": "UTM Parameters",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-meta-ads",
+        "sourceId": "container-n8n",
+        "destinationId": "system-meta-ads",
+        "description": "Retrieves campaign insights",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-google-ads",
+        "sourceId": "container-n8n",
+        "destinationId": "system-google-ads",
+        "description": "Retrieves campaign insights",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-shoptet-depoto",
+        "sourceId": "container-shoptet",
+        "destinationId": "system-depoto",
+        "description": "Sends orders for fulfillment",
+        "technology": "Webhook,API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-beeper",
+        "sourceId": "container-n8n",
+        "destinationId": "system-beeper",
+        "description": "Monitors messages",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-slack",
+        "sourceId": "container-n8n",
+        "destinationId": "system-slack",
+        "description": "Sends notifications",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-pan-talir-supabase",
+        "sourceId": "component-pan-talir",
+        "destinationId": "container-supabase",
+        "description": "Stores stock and supplier data",
+        "technology": "Database API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-lucy-qdrant",
+        "sourceId": "component-lucy",
+        "destinationId": "container-qdrant",
+        "description": "Stores and retrieves embeddings",
+        "technology": "Vector API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-notion",
+        "sourceId": "container-n8n",
+        "destinationId": "container-notion",
+        "description": "Updates databases and documentation",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-n8n-linear",
+        "sourceId": "container-n8n",
+        "destinationId": "container-linear",
+        "description": "Creates and updates issues",
+        "technology": "API",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-klient-missive",
+        "sourceId": "person-klient-horeca",
+        "destinationId": "container-missive",
+        "description": "Sends inquiries via email",
+        "technology": "Email",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-dodavatel-missive",
+        "sourceId": "person-dodavatel",
+        "destinationId": "container-missive",
+        "description": "Sends order confirmations",
+        "technology": "Email",
+        "tags": "Relationship"
+      },
+      {
+        "id": "rel-premium-gastro-synology",
+        "sourceId": "system-premium-gastro",
+        "destinationId": "container-synology-nas",
+        "description": "Backs up data",
+        "technology": "Network Storage",
+        "tags": "Relationship"
+      }
+    ]
+  },
+  "views": {
+    "systemLandscapeViews": [
+      {
+        "key": "system-landscape",
+        "title": "Premium Gastro System Landscape",
+        "description": "Overview of all systems and actors",
+        "elements": [
+          {
+            "id": "person-petr"
+          },
+          {
+            "id": "person-klient-horeca"
+          },
+          {
+            "id": "person-dodavatel"
+          },
+          {
+            "id": "system-premium-gastro"
+          },
+          {
+            "id": "system-pohoda"
+          },
+          {
+            "id": "system-ecomail"
+          },
+          {
+            "id": "system-meta-ads"
+          },
+          {
+            "id": "system-google-ads"
+          },
+          {
+            "id": "system-depoto"
+          },
+          {
+            "id": "system-beeper"
+          },
+          {
+            "id": "system-slack"
+          }
+        ],
+        "relationships": [
+          {
+            "relationshipId": "rel-petr-premium-gastro"
+          },
+          {
+            "relationshipId": "rel-klient-premium-gastro"
+          },
+          {
+            "relationshipId": "rel-dodavatel-premium-gastro"
+          },
+          {
+            "relationshipId": "rel-klient-missive"
+          },
+          {
+            "relationshipId": "rel-dodavatel-missive"
+          }
+        ],
+        "automaticLayout": {
+          "rankDirection": "TopBottom",
+          "rankSeparation": 300,
+          "nodeSeparation": 200,
+          "edgeSeparation": 200,
+          "vertices": false
+        }
+      }
+    ],
+    "systemContextViews": [
+      {
+        "key": "system-context",
+        "title": "Premium Gastro System Context",
+        "description": "System context diagram showing Premium Gastro and external actors",
+        "softwareSystemId": "system-premium-gastro",
+        "elements": [
+          {
+            "id": "person-petr"
+          },
+          {
+            "id": "person-klient-horeca"
+          },
+          {
+            "id": "person-dodavatel"
+          },
+          {
+            "id": "system-premium-gastro"
+          },
+          {
+            "id": "system-pohoda"
+          },
+          {
+            "id": "system-ecomail"
+          },
+          {
+            "id": "system-meta-ads"
+          },
+          {
+            "id": "system-google-ads"
+          },
+          {
+            "id": "system-depoto"
+          },
+          {
+            "id": "system-beeper"
+          },
+          {
+            "id": "system-slack"
+          }
+        ],
+        "relationships": [
+          {
+            "relationshipId": "rel-petr-premium-gastro"
+          },
+          {
+            "relationshipId": "rel-klient-premium-gastro"
+          },
+          {
+            "relationshipId": "rel-dodavatel-premium-gastro"
+          },
+          {
+            "relationshipId": "rel-shoptet-pohoda"
+          },
+          {
+            "relationshipId": "rel-bluejet-pohoda"
+          },
+          {
+            "relationshipId": "rel-n8n-pohoda"
+          },
+          {
+            "relationshipId": "rel-n8n-ecomail"
+          },
+          {
+            "relationshipId": "rel-shoptet-ecomail"
+          },
+          {
+            "relationshipId": "rel-n8n-meta-ads"
+          },
+          {
+            "relationshipId": "rel-n8n-google-ads"
+          },
+          {
+            "relationshipId": "rel-shoptet-depoto"
+          },
+          {
+            "relationshipId": "rel-n8n-beeper"
+          },
+          {
+            "relationshipId": "rel-n8n-slack"
+          },
+          {
+            "relationshipId": "rel-klient-missive"
+          },
+          {
+            "relationshipId": "rel-dodavatel-missive"
+          }
+        ],
+        "automaticLayout": {
+          "rankDirection": "TopBottom",
+          "rankSeparation": 300,
+          "nodeSeparation": 200,
+          "edgeSeparation": 200,
+          "vertices": false
+        }
+      }
+    ],
+    "containerViews": [
+      {
+        "key": "container-view",
+        "title": "Premium Gastro Containers",
+        "description": "Container diagram showing internal systems of Premium Gastro",
+        "softwareSystemId": "system-premium-gastro",
+        "elements": [
+          {
+            "id": "person-petr"
+          },
+          {
+            "id": "person-klient-horeca"
+          },
+          {
+            "id": "person-dodavatel"
+          },
+          {
+            "id": "container-missive"
+          },
+          {
+            "id": "container-n8n"
+          },
+          {
+            "id": "container-supabase"
+          },
+          {
+            "id": "container-qdrant"
+          },
+          {
+            "id": "container-bluejet"
+          },
+          {
+            "id": "container-shoptet"
+          },
+          {
+            "id": "container-linear"
+          },
+          {
+            "id": "container-synology-nas"
+          },
+          {
+            "id": "container-notion"
+          },
+          {
+            "id": "container-ultraengine"
+          }
+        ],
+        "relationships": [
+          {
+            "relationshipId": "rel-missive-n8n"
+          },
+          {
+            "relationshipId": "rel-n8n-missive"
+          },
+          {
+            "relationshipId": "rel-n8n-lucy"
+          },
+          {
+            "relationshipId": "rel-lucy-linear"
+          },
+          {
+            "relationshipId": "rel-lucy-shoptet"
+          },
+          {
+            "relationshipId": "rel-pan-talir-shoptet"
+          },
+          {
+            "relationshipId": "rel-pan-talir-bluejet"
+          },
+          {
+            "relationshipId": "rel-bluejet-shoptet"
+          },
+          {
+            "relationshipId": "rel-pan-talir-supabase"
+          },
+          {
+            "relationshipId": "rel-lucy-qdrant"
+          },
+          {
+            "relationshipId": "rel-n8n-notion"
+          },
+          {
+            "relationshipId": "rel-n8n-linear"
+          },
+          {
+            "relationshipId": "rel-klient-missive"
+          },
+          {
+            "relationshipId": "rel-dodavatel-missive"
+          }
+        ],
+        "automaticLayout": {
+          "rankDirection": "TopBottom",
+          "rankSeparation": 300,
+          "nodeSeparation": 200,
+          "edgeSeparation": 200,
+          "vertices": false
+        }
+      }
+    ],
+    "componentViews": [
+      {
+        "key": "component-view",
+        "title": "UltraEngine AI Agents",
+        "description": "Component diagram showing AI agents within UltraEngine",
+        "softwareSystemId": "system-premium-gastro",
+        "containerId": "container-ultraengine",
+        "elements": [
+          {
+            "id": "component-lucy"
+          },
+          {
+            "id": "component-pan-talir"
+          },
+          {
+            "id": "component-zeus"
+          },
+          {
+            "id": "component-oompa-loompas"
+          },
+          {
+            "id": "container-missive"
+          },
+          {
+            "id": "container-n8n"
+          },
+          {
+            "id": "container-supabase"
+          },
+          {
+            "id": "container-qdrant"
+          },
+          {
+            "id": "container-bluejet"
+          },
+          {
+            "id": "container-shoptet"
+          },
+          {
+            "id": "container-linear"
+          }
+        ],
+        "relationships": [
+          {
+            "relationshipId": "rel-n8n-lucy"
+          },
+          {
+            "relationshipId": "rel-lucy-linear"
+          },
+          {
+            "relationshipId": "rel-lucy-shoptet"
+          },
+          {
+            "relationshipId": "rel-pan-talir-shoptet"
+          },
+          {
+            "relationshipId": "rel-pan-talir-bluejet"
+          },
+          {
+            "relationshipId": "rel-pan-talir-supabase"
+          },
+          {
+            "relationshipId": "rel-lucy-qdrant"
+          }
+        ],
+        "automaticLayout": {
+          "rankDirection": "TopBottom",
+          "rankSeparation": 300,
+          "nodeSeparation": 200,
+          "edgeSeparation": 200,
+          "vertices": false
+        }
+      }
+    ]
+  },
+  "configuration": {
+    "styles": {
+      "elements": [
+        {
+          "tag": "Person",
+          "shape": "Person",
+          "icon": "",
+          "width": 550,
+          "height": 550,
+          "background": "#08427b",
+          "color": "#ffffff",
+          "fontSize": 22,
+          "metadata": true,
+          "description": true
+        },
+        {
+          "tag": "Software System",
+          "background": "#1168bd",
+          "color": "#ffffff",
+          "fontSize": 22,
+          "metadata": true,
+          "description": true
+        },
+        {
+          "tag": "Container",
+          "background": "#438dd5",
+          "color": "#ffffff",
+          "fontSize": 20,
+          "metadata": true,
+          "description": true
+        },
+        {
+          "tag": "Component",
+          "background": "#85bbf0",
+          "color": "#000000",
+          "fontSize": 18,
+          "metadata": true,
+          "description": true
+        },
+        {
+          "tag": "External",
+          "background": "#999999",
+          "color": "#ffffff"
+        },
+        {
+          "tag": "Internal",
+          "background": "#438dd5",
+          "color": "#ffffff"
+        },
+        {
+          "tag": "AI",
+          "background": "#ff6b6b",
+          "color": "#ffffff"
+        },
+        {
+          "tag": "Communication",
+          "background": "#4ecdc4",
+          "color": "#ffffff"
+        },
+        {
+          "tag": "Database",
+          "background": "#95e1d3",
+          "color": "#000000"
+        }
+      ],
+      "relationships": [
+        {
+          "tag": "Relationship",
+          "thickness": 2,
+          "color": "#707070",
+          "routing": "Direct",
+          "fontSize": 18,
+          "width": 200,
+          "position": 50,
+          "opacity": 100,
+          "metadata": true,
+          "description": true
+        }
+      ]
+    }
+  }
+}
